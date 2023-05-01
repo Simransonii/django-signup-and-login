@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>SignUp Here</h2>
+    <form action="/signup" method="post">
+        {% csrf_token %}
+        <div class="mb-6">
+            <label for="" >Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Create Username (Only letter & number)"  >
+            
+          </div>
+          <div class="mb-6">
+            <label for="" >First Name</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="FirstName"  >
+            
+          </div>
+          <div class="mb-6">
+            <label for="" >Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="LastName"  >
+            
+          </div>
+          <div class="mb-6">
+            <label for="" >Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email"  >
+            
+          </div>
+          <div class="mb-6">
+            <label for="" >Password</label>
+            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Password"  >
+            
+          </div>
+          <div class="mb-6">
+            <label for="" >Confirm Password</label>
+            <input type="password" class="form-control" id="pass2" name="pass2" placeholder="Confirm Password"  >
+            
+          </div>
+          <button type="submit">Signup</button>
+    </form>
+</body>
+</html>
