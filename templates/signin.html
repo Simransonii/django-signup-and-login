@@ -9,20 +9,20 @@
 </head>
 
 <body>
-    signin page
+    
     <h2>SignIn Here</h2>
     <form action="/signin" method="post">
         {% csrf_token %}
         <div class="mb-6">
             <label for="">Username</label>
             <input type="text" class="form-control" id="username" name="username"
-                placeholder="Enter Username ">
+                placeholder="Enter Username " required>
 
         </div>
 
         <div class="mb-6">
             <label for="">Password</label>
-            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Password">
+            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Password" required>
 
         </div>
 
